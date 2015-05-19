@@ -2,12 +2,6 @@
   # This Basic Distelli Manifest assumes the following
   # has been provisioned on the destination deploy server:
   #
-  # OS: Ubuntu
-  # Installed Packages:
-  #   nodejs >= 0.9   [sudo yum install epel-release]
-  #                   [sudo yum install nodejs]
-  #   npm >= 1.1      [sudo yum install npm]
-  #
 
   PkgInclude:
     - server.js
@@ -15,6 +9,9 @@
     - node_modules/
   PreInstall:
     - echo "PreInstall Starting."
+    - sudo yum install epel-release
+    - sudo yum install nodejs
+    - sudo yum install npm
   PostInstall:
     - echo "PostInstall Starting."
     # - npm install
