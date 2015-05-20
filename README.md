@@ -3,7 +3,7 @@ This tutorial will walk you through deploying a simple Hello World Node.js Appli
 
 <a href="https://www.distelli.com" target="_blank">Distelli</a> makes it fast and easy for developers to deploy code to any server with the push of a button. Our platform empowers developers and their teams to spend less time building and maintaining complex deployment tools and homegrown scripts so they can focus their valuable time and effort on creating the software that powers their business. Distelli is funded by <a href="http://www.a16z.com" target="_blank">Andreessen Horowitz</a>.
 
-##Prerequisites:##
+##Prerequisites: ##
 * <a href="https://www.distelli.com/signup" target="_blank">Sign up for a free Distelli account</a>.
 * <a href="https://www.distelli.com/docs/setup" target="_blank">Install the Distelli CLI Tool</a>.
 * <a href="https://www.distelli.com/docs/agent-setup" target = "_blank">Install the Distelli agent on your server</a>.
