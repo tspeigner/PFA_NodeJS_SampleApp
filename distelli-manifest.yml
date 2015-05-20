@@ -8,9 +8,9 @@
     - node_modules/
   PreInstall:
     - echo "PreInstall Starting."
-    - sudo yum install epel-release
-    - sudo yum install nodejs
-    - sudo yum install npm
+    - sudo yum -y install epel-release
+    - sudo yum -y install nodejs
+    - sudo yum -y install npm
   PostInstall:
     - echo "PostInstall Starting."
     # - npm install
