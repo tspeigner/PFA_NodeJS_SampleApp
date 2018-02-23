@@ -12,6 +12,7 @@ kreeuwijk/NodeCentOSPSimpleApp:
     - sudo yum -y install epel-release
     - sudo yum -y install nodejs
     - sudo yum -y install npm
+    - sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\``
   PostInstall:
     - echo "PostInstall Starting."
     # - npm install
