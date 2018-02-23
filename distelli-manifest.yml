@@ -8,6 +8,8 @@ kreeuwijk/NodeCentOSPSimpleApp:
     - node_modules/
   PreInstall:
     - echo "PreInstall Starting."
+    - sudo rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    - sudo yum -y update
     - sudo yum -y install epel-release
     - sudo yum -y install nodejs
     - sudo yum -y install npm
