@@ -19,3 +19,5 @@ seteam/NodeCentOSPSimpleApp:
   Exec:
     - echo "Exec Starting."
     - exec node server.js
+    - publicip=$(curl -s ident.me) || true
+    - echo "NodeJS application now running on: http://$publicip"
