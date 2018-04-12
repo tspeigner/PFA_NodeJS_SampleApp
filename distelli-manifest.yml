@@ -17,7 +17,7 @@ seteam/NodeCentOSPSimpleApp:
     - echo "PostInstall Starting."
     # - npm install
     - publicip=$(curl -s ident.me) || true
-    - 'echo "NodeJS application will start: on http://$publicip"'
+    - 'echo "NodeJS application will start on: http://$publicip"'
   Exec:
     - echo "Exec Starting."
     - exec node server.js
