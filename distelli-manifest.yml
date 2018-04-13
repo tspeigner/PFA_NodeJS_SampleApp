@@ -16,8 +16,10 @@ seteam/PFA_NodeJS_SampleApp:
   PostInstall:
     - echo "PostInstall Starting."
     # - npm install
-    - publicip=$(curl -s ident.me) || true
-    - 'echo "NodeJS application will start on: http://$publicip"'
   Exec:
     - echo "Exec Starting."
+    - publicip=$(curl -s ident.me) || true
+    - 'echo ****************************************************************'
+    - 'echo     "NodeJS application will start on: http://$publicip"'
+    - 'echo ****************************************************************'
     - exec node server.js
