@@ -19,7 +19,7 @@ seteam/PFA_NodeJS_SampleApp:
   Exec:
     - echo "Exec Starting."
     - publicip=$(curl -s ident.me) || true
-    - 'echo ****************************************************************'
+    - 'echo "****************************************************************"'
     - 'echo     "NodeJS application will start on: http://$publicip"'
-    - 'echo ****************************************************************'
+    - 'echo "****************************************************************"'
     - exec node server.js
