@@ -23,3 +23,6 @@ seteam/PFA_NodeJS_SampleApp:
     - 'echo     "NodeJS application will start on: http://$publicip"'
     - 'echo "****************************************************************"'
     - exec node server.js
+  PostStart:
+    - publicip=$(curl -s ident.me) || true
+    - curl -s "http://$publicip" | grep 'Your Node.js application is working!'
